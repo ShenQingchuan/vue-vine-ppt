@@ -1,0 +1,19 @@
+{
+  "name": "vue-vine-ppt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.9",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.4.26"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.206"
+  }
+}

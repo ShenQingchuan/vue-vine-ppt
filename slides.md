@@ -1,5 +1,5 @@
 ---
-background: /assets/entry-background.avif
+background: https://pic.imgdb.cn/item/66821de9d9c307b7e929c511.png
 title: Welcome to Vue Vine
 highlighter: shiki
 transition: slide-left

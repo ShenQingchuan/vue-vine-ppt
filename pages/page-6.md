@@ -37,11 +37,22 @@
   </span>
   <div class="flex flex-col my1">
     <span class="my1"><code>vineProp.optional</code> 可以用来指明可选</span>
-    <span class="my1"><code>vineProp.default</code> 可以用来设置默认值和根据值自动推导类型</span>
+    <span class="my1"><code>vineProp.withDefault</code> 可以用来设置默认值和根据值自动推导类型</span>
   </div>
 </p>
 
 <p v-click="[3,4]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+  <span class="my1">
+    <code>vineProp</code> 和 <code>vineProp.optional</code> 有唯一的一个形参
+    <span class="font-bold text-amber-300">Validator</span>
+  </span>
+  <div class="flex flex-col my1">
+    可以用来做 prop 值的校验，但同样也只会抛出 Warning
+  </div>
+  <span class="my1"><code>vineProp.withDefault</code> 则是位于第二个形参</span>
+</p>
+
+<p v-click="[4,5]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1">
     值得一提的是，<code>vine`...`</code> 部分本身不允许出现插值表达式，<br>
     同时模板部分的 JS 表达式中也不可以使用模板字符串，<br>
@@ -52,7 +63,7 @@
   </span>
 </p>
 
-<p v-click="[4,5]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<p v-click="[5,6]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1 text-6 font-bold text-emerald-300">
     而我们也为定义样式提供了相应的宏 API：<code>vineStyle</code> & <code>vineStyle.scoped</code>
   </span>
@@ -70,9 +81,9 @@
   </span>
 </p>
 
-<p v-click="[5,6]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<p v-click="[6,7]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="mb4">
-    这里我们罗列了一个表格，展示除 <code>vineProp</code> 之外，<br>
+    这里我们整理了一个表格，展示除 <code>vineProp</code> 之外，<br>
     Vue Vine 所有的宏与原来 Vue SFC 的宏的对应关系以及目前可用状态：
   </span>
 
@@ -86,10 +97,11 @@
 
 </p>
 
-<p v-click="[6,10]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<p v-click="[7,10]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="text-5 mb4 lh-10">
-    接下来我们看看在 Vue Vine 的概念下，<br>
-    一个包含多个组件的文件的不同部分应当怎样区分：
+    <code>.vine.ts</code> 是一个合法的 TS 文件，和一般的 TS 文件在模块概念上没有区别。<br>
+    在 Vue Vine 的概念下，<br>
+    一个包含多个组件的文件的不同部分含义如下：
   </span>
   <div class="mt6 flex items-stretch">
     <img 
@@ -98,13 +110,12 @@
       alt="comp-and-module-global"
     >
     <ul class="mt4 ml4 flex flex-col list-none">
-      <li class="mb4 transition-800" v-click="7">
-        <code>.vine.ts</code> 是一个合法的 TS 文件，和一般的 TS 文件在模块概念上没有区别。
-      </li>
       <li class="mb4 transition-800" v-click="8">
+        <span class="font-bold text-amber-200/90">黄色部分：</span><br> 
         所有返回值是 <code>vine`...`</code> 的函数都会被在 Vite 插件处理阶段被编译成 Vue 组件对象。
       </li>
       <li class="mb4 transition-800" v-click="9">
+        <span class="font-bold text-emerald-200/90">绿色部分：</span><br> 
         除此之外的部分在 Vite 插件处理时会原封不动，和 SFC 中的 <code>&lt;script&gt;</code> 中的语句一样。
       </li>
     </ul>
@@ -115,7 +126,7 @@
   v-click="10"
   class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4"
   :class="{
-    'flex-1': $clicks === 10,
+    'flex-1': $clicks === 11,
   }"
 >
   <span class="mb4 font-bold">
@@ -138,7 +149,7 @@
 
 <!-- --- ↑ 上面是内容 ----- ↓ 下面是代码 --- -->
 
-<template v-if="$clicks < 5">
+<template v-if="$clicks < 6">
 
 ````md magic-move
 ```vue-vine
@@ -174,10 +185,10 @@ export function Button(props: {
 export function Button() {
   const type = vineProp<'primary' | 'info' | 'warning' | 'error'>()
   const size = vineProp.optional<'small' | 'medium' | 'large'>()
-  const disabled = vineProp.default(false)
+  const text = vineProp<boolean>()
+  const disabled = vineProp.withDefault(false)
 
-  const btnClasses = computed(() => [`btn-${props.type}`, `btn-${props.size}`])
-
+  const btnClasses = computed(() => [`btn-${type.value}`, `btn-${size.value}`])
   return vine`
     <button
       class="vine-btn"
@@ -190,10 +201,21 @@ export function Button() {
 }
 ```
 ```vue-vine
+const ButtonTypes = ['primary', 'info', 'warning', 'error']
+type ButtonType = 'primary' | 'info' | 'warning' | 'error'
+
+export function Button() {
+  const type = vineProp<ButtonType>((v) => ButtonTypes.includes(v))
+
+  // ...
+  return vine`...`
+}
+```
+```vue-vine
 export function Button() {
   const type = vineProp<'primary' | 'info' | 'warning' | 'error'>()
   const size = vineProp.optional<'small' | 'medium' | 'large'>()
-  const disabled = vineProp.default(false)
+  const disabled = vineProp.withDefault(false)
 
   return vine`
     <button
@@ -231,7 +253,7 @@ export function Button() {
 </template>
 
 <floating-card 
-  v-click="[1,3]" 
+  v-click="[1,2]" 
   class="right-4 top-60% translate-y--50%"
 >
 
@@ -240,7 +262,26 @@ const Button = {
   props: {
     type: { required: true },
     size: { /* Simple prop */ },
-    disabled: { /* Simple prop */ },
+    disabled: { type: Boolean },
+  },
+  // ...
+}
+```
+
+</floating-card>
+
+<floating-card 
+  v-click="[2,3]" 
+  class="right-4 bottom-10% translate-y-20%"
+>
+
+```js
+const Button = {
+  props: {
+    type: { required: true },
+    size: { /* Simple prop */ },
+    text: { type: Boolean },
+    disabled: { type: Boolean, default: false },
   },
   // ...
 }
@@ -250,6 +291,25 @@ const Button = {
 
 <floating-card 
   v-click="[3,4]" 
+  class="right-4 bottom-10% translate-y-20%"
+>
+
+```js
+const Button = {
+  props: {
+    type: {
+      required: true,
+      validator: (v) => ButtonTypes.includes(v),
+    },
+  },
+  // ...
+}
+```
+
+</floating-card>
+
+<floating-card 
+  v-click="[4,5]" 
   class="right-4 bottom-0 rounded-2xl"
 >
 
@@ -261,5 +321,7 @@ import "/src/pages/home?type=vine-style&scopeId=70799c01&comp=Button&lang=css&vi
 </floating-card>
 
 <!--
-/ clicks = 1 / 需要显式地罗列出所有 prop 的名字意味着：你不可以直接用一个类型的名字作为 props 的类型标注，因为 Vine 编译器不内嵌 TS 编译器和上下文，无法得知某个名字的类型之中的所有字段。
+[click] 需要显式地罗列出所有 prop 的名字意味着：你不可以直接用一个类型的名字作为 props 的类型标注，因为 Vine 编译器不内嵌 TS 编译器和上下文，无法得知某个名字的类型之中的所有字段。
+
+[click] 对于 prop 有一个需要注意的限制，或者说特例，是 boolean 类型的默认值只能使用 `true` 或 `false` 字面量来表达而不可以用变量。这是由于 Vue 对属性的 Boolean-Cast 机制需要明确知道它是一个布尔型，同样也是因为我们不内嵌 TS 编译器所以只能要求用户指明。
 -->

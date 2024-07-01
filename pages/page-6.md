@@ -309,8 +309,8 @@ const Button = {
 </floating-card>
 
 <floating-card 
-  v-click="[4,5]" 
-  class="right-4 bottom-0 rounded-2xl"
+  v-click="[5,6]" 
+  class="right-4 bottom-20px rounded-2xl"
 >
 
 ```js

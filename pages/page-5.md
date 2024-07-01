@@ -12,28 +12,28 @@
 </p>
 
 <p v-click="1" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
-  <span class="mb2">
+  <span class="mb1">
     React 通过 <code class="font-bold text-rose-300">UI = f(state)</code> 
     这一理念将渲染过程描述成一种函数形式，这的确非常符合直觉。
   </span>
-  <span class="mb2 text-coolgray-100/60">
+  <span class="mb1 text-coolgray-100/60">
     Vue 的渲染机制同样也遵循这一理念，只是数据驱动层面是自动挡之于手动挡的区别。
   </span>
 </p>
 
 <p v-click="2" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-6">
-  <span class="mb2 text-amber-200/90 lh-12">
+  <span class="mb1 text-amber-200/90 lh-10">
     我非常想要借鉴一下这种方式，<br>
     将 Vue 组件的定义方式也变成一种函数形式。
   </span>
-  <span class="mb2 text-coolgray-100/60 text-4">
+  <span class="mb1 text-coolgray-100/60 text-4">
     但同时我又不想和 Vue 现有的书写方式割离太远，<br>
     比如要从模板切换成编写 JSX 我是不愿意的。
   </span>
 </p>
 
 <p v-click="3" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
-  <span class="mb2">
+  <span>
     同时 Vue 3 中 script setup 的设计本身也是脱胎于组件对象上的 setup 函数，<br>
     所以一个模式在我脑海中逐渐清晰起来 ...
   </span>

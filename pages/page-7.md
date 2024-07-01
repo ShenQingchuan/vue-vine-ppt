@@ -2,12 +2,11 @@
   “百尺竿头”
 </h2>
 
-<p v-click="[0,3]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
+<p v-click="[0,6]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
   <div class="flex items-center my1 transition-800">
     编译器的开发的确是一件比较辛苦枯燥的工作，完成 POC 那时的喜悦是难以言表的！
     <div class="text-6 ml-2" i-twemoji:partying-face />
   </div>
-
   <div v-click="1" class="flex items-center my1 transition-800">
     但是... 还有 
       <span class="ml-2 font-bold text-fuchsia-300">Vite 插件</span>、
@@ -16,9 +15,8 @@
     和接入社区已有生态等不计其数的后续任务
     <div class="text-6 ml-2" i-twemoji:flushed-face />
   </div>
-
   <div v-click="2" class="flex items-center my1 transition-800">
-    接下来我想展开 IDE 支持的探索，讲讲 Vue Vine 与 Volar 的奇妙缘分。
+    接下来我想稍微展开一点支线任务：IDE 支持的探索，简单讲讲 Vue Vine 与 Volar 的缘分。
     <div class="text-6 ml-2" i-twemoji:smiling-face-with-hearts />
   </div>
 </p>
@@ -28,12 +26,10 @@
     提起 Volar 大家可能想到的都是这个东西：
     <img class="h60px ml-2" src="https://pic.imgdb.cn/item/66826c18d9c307b7e9a32cbf.png" alt="volar-vue-ext" />
   </div>
-
   <div v-click="4" class="flex items-center transition-800 mb2">
     <img class="h30px mr-2" src="https://volarjs.dev/_astro/logo.lBA1W2sL_Z2kys9L.svg" alt="volar-logo" />
     <span class="font-bold text-lightblue-600 mr2 text-6">Volar.js</span> 是背后更底层的一套提高开发语言服务开发效率的工具链
   </div>
-
   <div v-click="5" class="flex items-center transition-800 my2">
     它能够极大方便你开发一门
       <span class="ml2 mr1 text-5">嵌入了其他语言的</span>
@@ -41,6 +37,51 @@
       <span class="mr1 font-bold text-7">的语言服务器</span>
   </div>
 </p>
+
+<p v-click="[6,10]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
+  <div v-click="[6,7]" class="flex flex-col mb1">
+    <span v-click="[6,7]" class="transition-800 mb2">
+      在没有任何扩展的情况下，一个 <code>.vine.ts</code> 文件会是这样：
+    </span>
+    <img
+      class="w-500px h-300px" 
+      src="https://pic.imgdb.cn/item/66827470d9c307b7e9b07ad0.png" 
+      alt="no-ext-vue-vine"
+    />
+  </div>
+  <div v-click="[7,8]" class="flex flex-col my1">
+    <span v-click="[7,8]" class="transition-800 mb2">
+      在添加了语法高亮的 <code>.tmLanguage.json</code> 定义后会是这样：
+    </span>
+    <img 
+      class="w-500px h-300px"
+      src="https://pic.imgdb.cn/item/6682741ad9c307b7e9affbf1.png" 
+      alt="no-ext-vue-vine"
+    />
+  </div>
+  <div v-click="[8,9]" class="flex flex-col transition-800 my2">
+    <span class="mb4">
+      但虽然模板中 JS 表达式上的变量名有了颜色，却并没有和定义处建立实际的索引关系
+    </span>
+    <img
+      class="w-600px h-auto" 
+      src="https://pic.imgdb.cn/item/668277cbd9c307b7e9b57def.png" 
+      alt="no-ext-vue-vine"
+    />
+  </div>
+  <div v-click="[9,10]" class="flex flex-col transition-800 my2">
+    <span class="mb4">
+      使用 Volar 我们给 <code>.vine.ts</code> 生成了一份虚拟文件，<br>
+      注入了一些伪代码模拟了对变量的引用
+    </span>
+    <img
+      class="w-auto h-300px" 
+      src="https://pic.imgdb.cn/item/66827ab6d9c307b7e9b9ce2e.png" 
+      alt="no-ext-vue-vine"
+    />
+  </div>
+</p>
+
 
 <!--
 [click]

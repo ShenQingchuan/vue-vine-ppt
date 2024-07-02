@@ -49,7 +49,8 @@
   <div class="flex flex-col my1">
     可以用来做 prop 值的校验，但同样也只会抛出 Warning
   </div>
-  <span class="my1"><code>vineProp.withDefault</code> 则是位于第二个形参</span>
+  <span class="my1">
+  在 <code>vineProp.withDefault</code> 之中则是位于第二个形参</span>
 </p>
 
 <p v-click="[4,5]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">

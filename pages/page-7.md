@@ -71,17 +71,22 @@
   </div>
   <div v-click="[9,10]" class="flex flex-col transition-800 my2">
     <span class="mb4">
-      使用 Volar 我们给 <code>.vine.ts</code> 生成了一份虚拟文件，<br>
+      使用 Volar 我们给 <code>.vine.ts</code> 生成了一份 
+      <span class="text-amber-200">虚拟文件</span>
+      <br>
       注入了一些伪代码模拟了对变量的引用
     </span>
     <img
       class="w-auto h-300px" 
-      src="https://pic.imgdb.cn/item/66827ab6d9c307b7e9b9ce2e.png" 
+      src="https://pic.imgdb.cn/item/6683757bd9c307b7e901478d.png" 
       alt="no-ext-vue-vine"
     />
   </div>
 </p>
 
+<video autoplay loop class="mt4" v-click="10">
+  <source src="https://mp4.ziyuan.wang/view.php/dc740547486ccfc9dd3f9f0885c62032.mp4" />
+</video>
 
 <!--
 [click]
@@ -95,5 +100,15 @@
 [click] 是不是看着这个描述感觉有点绕晕了？就拿我们刚才设计的 Vine 来说，其实是一个 TS 的超集，只是需要在特定区域扩展了对 Vue 模板的语言服务支持
 
 这种一个语言里嵌入了另一个语言的场景，就正是 Volar.js 想解决的目标。
+
+[click] 
+[click] 
+[click] 
+[click] 
+[click] 
+
+可以看到视频中我编写的部分都有在虚拟文件中进行映射，尤其是在编写模板部分的代码时是映射到 Volar 生成 VLS 辅助代码中，即使是编辑器上的选区操作，虚拟文件都是完全和源文件保持一致的。
+
+这里 Vine 使用 Volar 创建虚拟文件的目的就是为了把 **`.vine.ts`** 中的 TS 上下文环境和模板部分融合到一起。
 
 -->

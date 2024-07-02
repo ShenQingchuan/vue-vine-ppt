@@ -84,14 +84,7 @@
   </div>
 </p>
 
-<video 
-  autoplay 
-  loop
-  playsinline
-  muted
-  preload="auto"
-  class="mt4" v-click="10"
->
+<video v-click="10" autoplay loop playsinline muted preload="auto" class="mt4">
   <source src="https://mp4.ziyuan.wang/view.php/dc740547486ccfc9dd3f9f0885c62032.mp4" />
 </video>
 

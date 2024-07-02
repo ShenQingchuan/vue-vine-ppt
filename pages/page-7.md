@@ -89,6 +89,7 @@
   loop
   playsinline
   muted
+  preload="auto"
   class="mt4" v-click="10"
 >
   <source src="https://mp4.ziyuan.wang/view.php/dc740547486ccfc9dd3f9f0885c62032.mp4" />

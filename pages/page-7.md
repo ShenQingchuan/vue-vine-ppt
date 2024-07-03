@@ -85,7 +85,7 @@
 </p>
 
 <video v-if="$clicks === 10" autoplay loop playsinline muted preload="auto" class="mt4">
-  <source src="https://mp4.ziyuan.wang/view.php/dc740547486ccfc9dd3f9f0885c62032.mp4" />
+  <source src="/assets/volar-virtual-code.mp4" />
 </video>
 
 <!--

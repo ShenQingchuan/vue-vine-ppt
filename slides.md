@@ -82,3 +82,11 @@ src: ./pages/page-7.md
 hide: false
 class: relative flex flex-col
 ```
+
+---
+
+```yaml
+src: ./pages/page-8.md
+hide: false
+class: relative flex flex-col
+```

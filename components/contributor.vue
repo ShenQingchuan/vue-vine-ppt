@@ -22,7 +22,7 @@ defineProps<{
         <code>@{{ userName }}</code>
     </span>
       <span v-if="contribution" class="text-coolgray-400/80 text-3">
-        {{ contribute }}
+        {{ contribution }}
       </span>
     </div>
   </a>

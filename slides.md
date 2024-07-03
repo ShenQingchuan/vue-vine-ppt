@@ -4,7 +4,7 @@ title: Welcome to Vue Vine
 highlighter: shiki
 transition: slide-left
 fonts:
-  sans: Figtree, Noto Sans SC
+  sans: Figtree, Noto Sans SC, Shadows Into Light, LXGW WenKai Mono TC
   serif: Figtree, Noto Sans SC
   mono: Fira Code
   local: Helvetica Neue
@@ -90,3 +90,44 @@ src: ./pages/page-8.md
 hide: false
 class: relative flex flex-col
 ```
+
+---
+layout: image
+image: https://pic.imgdb.cn/item/6685176bd9c307b7e9212874.png
+---
+
+<div class="w-full h-full flex flex-col items-center justify-center">
+  <div 
+    class="
+      w-fit text-center
+      animate-fade-in
+      animate-duration-0.5s
+      font-bold text-16
+      font-mono flex flex-col
+    "
+  >
+    <span class="mb1" style="font-family: 'LXGW WenKai Mono TC';">
+      <span class="text-lightflow-unit">感</span>
+      <span class="text-lightflow-unit">谢</span>
+      <span class="text-lightflow-unit">聆</span>
+      <span class="text-lightflow-unit">听</span>
+    </span>
+    <span class="mb1" style="font-family: 'Shadows Into Light';">
+      <span class="text-lightflow-unit">T</span>
+      <span class="text-lightflow-unit">h</span>
+      <span class="text-lightflow-unit">a</span>
+      <span class="text-lightflow-unit">n</span>
+      <span class="text-lightflow-unit mr4">k</span>
+      <span class="text-lightflow-unit">y</span>
+      <span class="text-lightflow-unit">o</span>
+      <span class="text-lightflow-unit">u</span>
+    </span>
+  </div>
+
+  <div class="mt6 flex items-center">
+      本演示文稿使用
+      <img class="ml-2 w-24px h-24px" src="https://cn.sli.dev/logo.svg" alt="slidev-logo" />
+      <a class="mr-2" href="https://sli.dev">Slidev</a>
+      呈现
+    </div>
+</div>

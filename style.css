@@ -13,3 +13,36 @@
   margin: 0 !important;
   pointer-events: none;
 }
+
+.text-lightflow-unit {
+  margin-right: 2px;
+  animation-delay: 0s;
+  color: #fff;
+  text-shadow: 0 0 0 #fff;
+  animation: lightflow-start 3s ease-in-out infinite alternate;
+}
+
+@keyframes lightflow-start {
+  to {
+      text-shadow: 0 0 1px #4f8259,
+        0 0 1px #baff5a,
+        0 0 3px #8ef5c7,
+        0 0 4px #045513,
+        0 0 6px #4ac09b,
+        0 0 9px #aeed87;
+      color: #faf6e2;
+  }
+}
+
+.text-lightflow-unit:nth-child(1) { animation-delay: 0.1s; }
+.text-lightflow-unit:nth-child(2) { animation-delay: 0.2s; }
+.text-lightflow-unit:nth-child(3) { animation-delay: 0.3s; }
+.text-lightflow-unit:nth-child(4) { animation-delay: 0.4s; }
+.text-lightflow-unit:nth-child(5) { animation-delay: 0.5s; }
+.text-lightflow-unit:nth-child(6) { animation-delay: 0.6s; }
+.text-lightflow-unit:nth-child(7) { animation-delay: 0.7s; }
+.text-lightflow-unit:nth-child(8) { animation-delay: 0.8s; }
+.text-lightflow-unit:nth-child(9) { animation-delay: 0.9s; }
+.text-lightflow-unit:nth-child(10) { animation-delay: 0.10s; }
+.text-lightflow-unit:nth-child(11) { animation-delay: 0.11s; }
+.text-lightflow-unit:nth-child(12) { animation-delay: 0.12s; }

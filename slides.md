@@ -23,8 +23,14 @@ class: text-center
   一个文件多个组件、函数形式定义组件、更贴合 TypeScript
 </p>
 
-<p class="flex items-center justify-center !mt-16">
-  <div class="text-6 mr-4 translate-y-2px" i-carbon-logo-github />
+<p class="flex items-center justify-center !mt-10">
+  <img 
+    src="https://avatars.githubusercontent.com/u/46062972?v=4"
+    width="64"
+    height="64"
+    alt="ShenQingchuan"
+    class="mr4 rounded-full"
+  />
   <a href="https://github.com/ShenQingchuan" class="text-6 !border-none">
     @ShenQingchuan
   </a>

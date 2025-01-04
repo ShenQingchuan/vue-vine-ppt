@@ -1,5 +1,9 @@
 /* Global styles */
 
+* {
+  font-feature-settings: "liga" 0;
+}
+
 .slidev-vclick-target {
   transition-property: height;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -4,8 +4,8 @@ title: Welcome to Vue Vine
 highlighter: shiki
 transition: slide-left
 fonts:
-  sans: Figtree, Noto Sans SC, Shadows Into Light, LXGW WenKai Mono TC
-  serif: Figtree, Noto Sans SC
+  sans: Rubik, Noto Sans SC, Shadows Into Light, LXGW WenKai Mono TC
+  serif: Rubik, Noto Sans SC
   mono: Fira Code
   local: Helvetica Neue
 
@@ -16,11 +16,13 @@ class: text-center
 
 <div class="flex flex-col items-center justify-center">
   <span class="my-2 font-bold text-64px">Vue Vine</span>
-  <span class="my-2 text-36px">尝试全新的 Vue.js 书写方式</span>
+  <span class="my-2 text-36px">New way to write Vue.js</span>
 </div>
 
 <p class="text-24px text-coolgray-400">
-  一个文件多个组件、函数形式定义组件、更贴合 TypeScript
+  Multiple <div class="i-simple-icons:vuedotjs inline-block transform-translate-y-1"></div> in one <div class="i-carbon-document inline-block transform-translate-y-1"></div> <span class="mx-2">·</span>
+  Function component <span class="mx-2">·</span>
+  All-in TypeScript
 </p>
 
 <p class="flex items-center justify-center !mt-10">
@@ -37,9 +39,10 @@ class: text-center
 </p>
 
 <!--
-大家好，我是 ShenQingchuan，是一名前端开发工程师和开源爱好者，之前大家可能都是通过 Vue/Vite 中文文档译者身份认识我的。
+Hello everyone. My name is ShenQingchuan, you can call me River too. I'm a front-end developer and open source enthusiast. I was the maintainer of Vue/Vite Chinese translation.
+But for now, I'd like to introduce myself as the author of Vue Vine.
 
-很荣幸能有机会在线下的 Vue Conf 大会和大家见面、分享我自己的一个小小作品，开发它的初衷完全是突发奇想、为了探索一种全新的书写 Vue 的方式，那么废话不多说，我直接带大家和我一起体验和回顾这趟旅程 ...
+I'm so glad to have this opportunity to share this project with you in Vue Nation. So let's roll back the clock to see where we began.
 -->
 
 ---

@@ -20,7 +20,7 @@ class: text-center
 </div>
 
 <p class="text-24px text-coolgray-400">
-  Multiple <div class="i-simple-icons:vuedotjs inline-block transform-translate-y-1"></div> in one <div class="i-carbon-document inline-block transform-translate-y-1"></div> <span class="mx-2">·</span>
+  Multiple <div class="i-simple-icons:vuedotjs inline-block transform-translate-y-1"></div> in one <div class="i-mdi:file-document inline-block transform-translate-y-1"></div> <span class="mx-2">·</span>
   Function component <span class="mx-2">·</span>
   All-in TypeScript
 </p>

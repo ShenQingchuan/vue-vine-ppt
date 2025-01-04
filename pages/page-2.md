@@ -4,20 +4,21 @@
   <span class="text-emerald-300">of SFC</span>
 </h2>
 
-<p v-click="1" class="transition-800 w-640px lh-2 text-coolgray-200 text-2xl">
+<p v-click="1" class="transition-800 w-640px lh-8! text-coolgray-200 text-2xl">
   SFC, the iconic feature of Vue, <br>
   even learned by other frameworks like <span class="text-orange-600">Svelte</span> & <span class="text-violet-400">Astro</span>
 </p>
 
-<p v-click="1" class="transition-800 w-640px lh-2 text-coolgray-400 font-italic">
+<p v-click="1" class="transition-800 w-640px lh-3 text-coolgray-400 font-italic">
   Keep separation of concerns, keep it simple.
 </p>
 
-<p v-click="2" class="transition-800 w-640px lh-2 text-coolgray-100">
-  But, after years of development, is SFC still the only choice we have?
+<p v-click="2" class="transition-800 w-640px lh-8! text-coolgray-100 text-2xl mt-8!">
+  But, after years of iteration, <br>
+  is SFC still the only choice we have?
 </p>
 
-<p v-click="3" class="transition-800 w-640px lh-2 text-coolgray-100 flex items-center">
+<p v-click="3" class="transition-800 w-640px lh-3 text-coolgray-100 flex items-center">
   <div class="text-16 mr-4" i-twemoji:thinking-face />
   <span class="text-fuchsia-300 text-6">One File, Multiple Components?</span>
 </p>

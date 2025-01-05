@@ -19,13 +19,13 @@ class: text-center
   <span class="my-2 text-36px">New way to write Vue.js</span>
 </div>
 
-<p class="text-24px text-coolgray-400">
+<div class="text-24px text-coolgray-400">
   Multiple <div class="i-simple-icons:vuedotjs inline-block transform-translate-y-1"></div> in one <div class="i-mdi:file-document inline-block transform-translate-y-1"></div> <span class="mx-2">·</span>
   Function component <span class="mx-2">·</span>
   All-in TypeScript
-</p>
+</div>
 
-<p class="flex items-center justify-center !mt-10">
+<div class="flex items-center justify-center !mt-10">
   <img 
     src="https://avatars.githubusercontent.com/u/46062972?v=4"
     width="64"
@@ -36,7 +36,7 @@ class: text-center
   <a href="https://github.com/ShenQingchuan" class="text-6 !border-none">
     @ShenQingchuan
   </a>
-</p>
+</div>
 
 <!--
 Hello everyone. My name is ShenQingchuan, you can call me River too. I'm a front-end developer and open source enthusiast. I was the maintainer of Vue/Vite Chinese translation.

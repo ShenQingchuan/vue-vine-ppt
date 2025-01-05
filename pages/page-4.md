@@ -2,17 +2,17 @@
   “移花接木”
 </h2>
 
-<p
+<div
   v-click.hide="1"
   class="flex items-center transition-800"
 >
   <img class="mt-4 w-full h-460px object-contain" src="/assets/vue-repl-1.png" alt="vue-repl-1">
-</p>
+</div>
 
-<p v-click="1" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="1" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my2">整个 <code>.vue</code> SFC 文件其实就是被编译成了一个 Vue 组件对象，</span>
   <span class="my2">因此若我们要想实现一个文件中定义多个组件，只需编译出多个组件对象即可。</span>
-</p>
+</div>
 
 <v-click :at="2">
 
@@ -23,7 +23,7 @@ flowchart LR
 
 </v-click>
 
-<p v-click="2" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-100 text-4">
+<div v-click="2" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-100 text-4">
   <span class="mb2">
     得益于 Vue 良好的架构设计，和 SFC 解析过程直接相关的部分其实只有 <code>@vue/compiler-sfc</code>，
   </span>
@@ -39,7 +39,7 @@ flowchart LR
   <span class="my2">
     相当于造一个新的 <strong><code>@vue/compiler-vine</code></strong> 出来。
   </span>
-</p>
+</div>
 
 <!--
 打开 Vue 的 Playground，我相信大家都或多或少来用过这个编译展示工具，可以看到一个 SFC 实际最后被编译出的 JS 和 CSS 代码，其实看起来相当干净且独立。

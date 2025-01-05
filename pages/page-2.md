@@ -4,26 +4,26 @@
   <span class="text-emerald-300">of SFC</span>
 </h2>
 
-<p v-click="1" class="transition-800 w-640px lh-8! text-coolgray-200 text-2xl">
+<div v-click="1" class="transition-800 w-640px lh-8! text-coolgray-200 text-2xl my-4">
   SFC, the iconic feature of Vue, <br>
   even learned by other frameworks like <span class="text-orange-600">Svelte</span> & <span class="text-violet-400">Astro</span>
-</p>
+</div>
 
-<p v-click="1" class="transition-800 w-640px lh-3 text-coolgray-400 font-italic">
-  Keep separation of concerns, keep it simple.
-</p>
+<div v-click="1" class="transition-800 w-640px lh-3 text-coolgray-400 font-italic my-4">
+  Keep separation of concerns, keep it similar to HTML.
+</div>
 
-<p v-click="2" class="transition-800 w-640px lh-8! text-coolgray-100 text-2xl mt-8!">
+<div v-click="2" class="transition-800 w-640px lh-8! text-coolgray-100 text-2xl mt-8!">
   But, after years of iteration, <br>
   is SFC still the only choice we have?
-</p>
+</div>
 
-<p v-click="3" class="transition-800 w-640px lh-3 text-coolgray-100 flex items-center">
+<div v-click="3" class="transition-800 w-640px lh-3 text-coolgray-100 flex items-center my-4">
   <div class="text-16 mr-4" i-twemoji:thinking-face />
   <span class="text-fuchsia-300 text-6">One File, Multiple Components?</span>
-</p>
+</div>
 
-<ul class="flex flex-col w-640px lh-2 text-coolgray-300/80">
+<ul class="flex flex-col w-640px lddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddh-2 text-coolgray-300/80">
   <li v-click="4" class="transition-800">Component must be one file ?? <div class="text-6 inline-block ml-2 transform-translate-y-1.2" i-twemoji:face-with-rolling-eyes /></li>
   <li v-click="5" class="transition-800">Keep switching between files is annoying !! <div class="text-6 inline-block ml-2 transform-translate-y-1.2" i-twemoji:angry-face /></li>
 </ul>
@@ -55,9 +55,7 @@ Many developers may start from writing a long component and then splitting, whic
 
 And then, <span class="font-bold text-amber-300">switching between files</span> in a large codebase project is even more dizzying.
 
-[click]
-
-Let's keep these conclusions as our original intention and see if there are similar solutions in community.
+Let's keep these conclusions, and see if there is any available solution in community.
 
 [Page cost：4 min]
 -->

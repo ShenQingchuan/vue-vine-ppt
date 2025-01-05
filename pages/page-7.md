@@ -2,7 +2,7 @@
   “百尺竿头”
 </h2>
 
-<p v-click="[0,6]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[0,6]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
   <div class="flex items-center my1 transition-800">
     编译器的开发的确是一件比较辛苦枯燥的工作，完成 POC 那时的喜悦是难以言表的！
     <div class="text-6 ml-2" i-twemoji:partying-face />
@@ -19,9 +19,9 @@
     接下来我想稍微展开一点支线任务：IDE 支持的探索，简单讲讲 Vue Vine 与 Volar 的缘分。
     <div class="text-6 ml-2" i-twemoji:smiling-face-with-hearts />
   </div>
-</p>
+</div>
 
-<p v-click="[3,6]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[3,6]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
   <div class="flex items-center my1 transition-800">
     提起 Volar 大家可能想到的都是这个东西：
     <img class="h60px ml-2" src="https://pic.imgdb.cn/item/66826c18d9c307b7e9a32cbf.png" alt="volar-vue-ext" />
@@ -36,9 +36,9 @@
       <span class="mr1 text-6">语言</span>
       <span class="mr1 font-bold text-7">的语言服务器</span>
   </div>
-</p>
+</div>
 
-<p v-click="[6,10]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[6,10]" class="flex flex-col w-auto lh-2 text-coolgray-300 text-4">
   <div v-click="[6,7]" class="flex flex-col mb1">
     <span v-click="[6,7]" class="transition-800 mb2">
       在没有任何扩展的情况下，一个 <code>.vine.ts</code> 文件会是这样：
@@ -82,7 +82,7 @@
       alt="no-ext-vue-vine"
     />
   </div>
-</p>
+</div>
 
 <video v-if="$clicks === 10" autoplay loop playsinline muted preload="auto" class="mt4">
   <source src="/assets/volar-virtual-code.mp4" />

@@ -2,7 +2,7 @@
   “众人拾柴”
 </h2>
 
-<p v-click="[0,1]" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800">
+<div v-click="[0,1]" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800">
   <div class="flex items-center mt2 mb2">
     Vue Vine 一开始的确只是一个以学习为主要目标的项目，但是我们也不甘心只是玩具而已。
   </div>
@@ -38,9 +38,9 @@
       src="/assets/twitter-post.png"
     />
   </div>
-</p>
+</div>
 
-<p v-click="[1,2]" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800">
+<div v-click="[1,2]" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800">
   <div class="flex items-center mt2 mb2">
     起初这一切都只是我自己的独行之旅，但我不想把开源做成一个人的自嗨
   </div>
@@ -56,19 +56,19 @@
       <Contributors />
     </div>
   </div>
-</p>
-
-<div v-click="2" class="flex flex-col mt4">
-  <p class="my1!">围绕着我们起初的目标，一点一滴的开发逐渐汇聚出如下的架构图景 ...</p>
-  <p class="flex items-center mt1 mb2">
-    如果你对这个方案感兴趣，这里还有大量的机会等着你一起来参与！
-    <div class="animate-bounce animate-count-infinite animate-duration-0.5s text-6 mr-2" i-twemoji:hugging-face />
-  </p>
 </div>
 
-<p v-click="2" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800 my0!">
+<div v-click="2" class="flex flex-col mt4">
+  <div class="my1!">围绕着我们起初的目标，一点一滴的开发逐渐汇聚出如下的架构图景 ...</div>
+  <div class="flex items-center mt1 mb2">
+    如果你对这个方案感兴趣，这里还有大量的机会等着你一起来参与！
+    <div class="animate-bounce animate-count-infinite animate-duration-0.5s text-6 mr-2" i-twemoji:hugging-face />
+  </div>
+</div>
+
+<div v-click="2" class="flex flex-col w-auto lh-2 text-coolgray-100 text-4 transition-800 my0!">
   <img src="/assets/vue-vine-arch.svg" class="max-w-460px h-300px" />
-</p>
+</div>
 
 <!--
 事实上，我从一开始就明白这个项目、这个解决方案只是为了解决一个很小众的需求，或许就如这个图里所看到的一样只是那部分和我一样喜欢 Vue 又喜欢 React 函数组件形式的人。

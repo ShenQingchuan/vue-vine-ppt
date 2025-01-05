@@ -2,7 +2,7 @@
   “一睹芳容”
 </h2>
 
-<p v-click="[0,1]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[0,1]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1">
     简单来说这个写法就是：<i text-6 font-bold>把组件写成一个函数!</i><br>
   </span>
@@ -15,9 +15,9 @@
   <span class="text-amber-200/90">
     所以不要尝试调用这个函数，它将没有任何意义。
   </span>
-</p>
+</div>
 
-<p v-click="[1,2]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[1,2]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1 text-6 font-bold text-emerald-300">
     若需要给组件定义 props，有两种可选的方式：
   </span>
@@ -28,9 +28,9 @@
       你必须显式地罗列出所有 prop 的名字，它们将组成最终组件对象的 props 字段
     </span>
   </span>
-</p>
+</div>
 
-<p v-click="[2,3]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[2,3]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1">
     第二种是使用 <code>vineProp</code> 分别定义，这个 idea 实际上是借鉴自
     <a href="https://vue-macros.dev" class="font-bold text-fuchsia-300">Vue Macros</a>
@@ -39,9 +39,9 @@
     <span class="my1"><code>vineProp.optional</code> 可以用来指明可选</span>
     <span class="my1"><code>vineProp.withDefault</code> 可以用来设置默认值和根据值自动推导类型</span>
   </div>
-</p>
+</div>
 
-<p v-click="[3,4]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[3,4]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1">
     <code>vineProp</code> 和 <code>vineProp.optional</code> 有唯一的一个形参
     <span class="font-bold text-amber-300">Validator</span>
@@ -51,9 +51,9 @@
   </div>
   <span class="my1">
   在 <code>vineProp.withDefault</code> 之中则是位于第二个形参</span>
-</p>
+</div>
 
-<p v-click="[4,5]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[4,5]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1">
     值得一提的是，<code>vine`...`</code> 部分本身不允许出现插值表达式，<br>
     同时模板部分的 JS 表达式中也不可以使用模板字符串，<br>
@@ -62,9 +62,9 @@
     </span>
     <div class="inline-block text-6 translate-y-1" i-twemoji:face-with-tongue />
   </span>
-</p>
+</div>
 
-<p v-click="[5,6]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[5,6]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="my1 text-6 font-bold text-emerald-300">
     而我们也为定义样式提供了相应的宏 API：<code>vineStyle</code> & <code>vineStyle.scoped</code>
   </span>
@@ -80,9 +80,9 @@
       但这同样和 Vite 一样需要你预先在环境中安装相应的预处理器。
     </span>
   </span>
-</p>
+</div>
 
-<p v-click="[6,7]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[6,7]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="mb4">
     这里我们整理了一个表格，展示除 <code>vineProp</code> 之外，<br>
     Vue Vine 所有的宏与原来 Vue SFC 的宏的对应关系以及目前可用状态：
@@ -96,9 +96,9 @@
   | `vineSlots` | `defineSlots` | <span class="text-green-200/90">使用方式完全一致</span> |
   | `vineModel` | `defineModel` | <span class="text-rose-200/90">暂未完全对齐官方实现，目标是与原版完全一致</span> |
 
-</p>
+</div>
 
-<p v-click="[7,10]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
+<div v-click="[7,10]" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
   <span class="text-5 mb4 lh-10">
     <code>.vine.ts</code> 是一个合法的 TS 文件，和一般的 TS 文件在模块概念上没有区别。<br>
     在 Vue Vine 的概念下，<br>
@@ -121,9 +121,9 @@
       </li>
     </ul>
   </div>
-</p>
+</div>
 
-<p
+<div
   v-click="10"
   class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4"
   :class="{
@@ -146,7 +146,7 @@
       "
     />
   </div>
-</p>
+</div>
 
 <!-- --- ↑ 上面是内容 ----- ↓ 下面是代码 --- -->
 

@@ -1,5 +1,5 @@
 <h2 class="font-bold text-coolGray">
-  “移花接木”
+  "Break the mirror"
 </h2>
 
 <div
@@ -9,9 +9,9 @@
   <img class="mt-4 w-full h-460px object-contain" src="/assets/vue-repl-1.png" alt="vue-repl-1">
 </div>
 
-<div v-click="1" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4">
-  <span class="my2">整个 <code>.vue</code> SFC 文件其实就是被编译成了一个 Vue 组件对象，</span>
-  <span class="my2">因此若我们要想实现一个文件中定义多个组件，只需编译出多个组件对象即可。</span>
+<div v-click="1" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-300 text-4 my-4">
+  <span class="my2"><code>.vue</code> SFC file is compiled into a Vue component object.</span>
+  <span class="my2">So if we want to implement multiple components in a file, we just need to compile multiple component objects.</span>
 </div>
 
 <v-click :at="2">
@@ -23,38 +23,31 @@ flowchart LR
 
 </v-click>
 
-<div v-click="2" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-100 text-4">
-  <span class="mb2">
-    得益于 Vue 良好的架构设计，和 SFC 解析过程直接相关的部分其实只有 <code>@vue/compiler-sfc</code>，
-  </span>
-  <span class="my2 text-coolgray-400">
-    它完成了编译生成代码的组装、样式处理、宏 API 的实现，
-  </span>
-  <span class="my2 text-coolgray-400">
-    乃至是和 Vite 等构建工具的某些集成功能，比如 HMR 上下文注入，
-  </span>
-  <span class="my2">
-    而我们完全可以在整个编译流程上替换掉这一环，自行将其客制化。
-  </span>
-  <span class="my2">
-    相当于造一个新的 <strong><code>@vue/compiler-vine</code></strong> 出来。
-  </span>
+<div v-click="2" class="flex flex-col transition-800 w-auto lh-2 text-coolgray-100 text-4 my-4">
+
+  - Thanks to Vue's good architecture design
+  - Replace the "front-end" of this compilation process
+  - Reuse `@vue/compiler-dom` to generate render function
+  - Make a new compiler to retrieve other syntax
+
 </div>
 
 <!--
-打开 Vue 的 Playground，我相信大家都或多或少来用过这个编译展示工具，可以看到一个 SFC 实际最后被编译出的 JS 和 CSS 代码，其实看起来相当干净且独立。
+If you've ever used Vue Playground, you'll see what a SFC file is compiled into.
 
 [click] 
 
-在一个 JS 文件里写对象有手就行，需要花力气的部分是把模板的编译结果，也就是最终的渲染函数（乃至以后 vapor 模式的真实 DOM 渲染操作过程）嵌入进这个组件对象里面。
+That is a Vue component object.
+
+So, supporting for multiple components in one file is actually quite easy.
 
 [click] 
 
-然而这个编译的过程得益于 Vue 良好的架构设计，已经是一种可供直接调用的工具了。
+Thanks to Vue's good architecture design, it divides compiler into different layers so that we can start from anyone.
 
-所以理论上我们只要循环一下，多次调用现有的编译过程、然后把结果、也就是多个 Vue 组件对象放在一起就成了。
+Theoretically we just need to loop this process, produce multiple component objects, and put them together.
 
-这也就是说，虽然我们想要设计的写法是全新的模式，但我希望完成这件事的过程中，可以尽最大程度地利用现在工具链已有的能力，减轻工作量。
+It decreased a lot of work when creating our new toolchain.
 
-[本页预计耗时：1.5 min]
+[Page cost: 1.5 min]
 -->

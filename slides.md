@@ -39,10 +39,17 @@ class: text-center
 </div>
 
 <!--
-Hello everyone. My name is ShenQingchuan, you can call me River too. I'm a front-end developer and open source enthusiast. I was the maintainer of Vue/Vite Chinese translation.
-But for now, I'd like to introduce myself as the author of Vue Vine.
+Hello everyone. My name is ShenQingchuan, you can also call me River. 
 
-I'm so glad to have this opportunity to share this project with you in Vue Nation. So let's roll back the clock to see where we began.
+I'm a front-end engineer and also enthusiastic about open source development. 
+
+I did a lot of translation in the past few years in Vue, Vite and Rollup Chinese documentation.
+
+But for now, I'd like to call myself the author of Vue Vine.
+
+I'm so glad to have today's opportunity to share this project with you in Vue Nation. 
+
+So let's roll back the clock to see where we began.
 -->
 
 ---
@@ -115,12 +122,12 @@ image: https://pic.imgdb.cn/item/6685176bd9c307b7e9212874.png
       font-mono flex flex-col
     "
   >
-    <span class="mb1" style="font-family: 'LXGW WenKai Mono TC';">
+    <!-- <span class="mb1" style="font-family: 'LXGW WenKai Mono TC';">
       <span class="text-lightflow-unit">感</span>
       <span class="text-lightflow-unit">谢</span>
       <span class="text-lightflow-unit">聆</span>
       <span class="text-lightflow-unit">听</span>
-    </span>
+    </span> -->
     <span class="mb1" style="font-family: 'Shadows Into Light';">
       <span class="text-lightflow-unit">T</span>
       <span class="text-lightflow-unit">h</span>
@@ -134,17 +141,14 @@ image: https://pic.imgdb.cn/item/6685176bd9c307b7e9212874.png
   </div>
 
   <div class="mt6 flex items-center">
-      本演示文稿使用
+      Slides driven by
       <img class="ml-2 w-24px h-24px" src="https://cn.sli.dev/logo.svg" alt="slidev-logo" />
       <a class="mr-2" href="https://sli.dev">Slidev</a>
-      呈现
     </div>
 </div>
 
 <!--
-最后，非常感谢所有的你们能听到这里。
 
-如果你觉得这个演讲很有趣或是对你有帮助的话，我会非常开心。
+That's all for my talk today, thanks for your attention!
 
-再次感谢 Vue Conf 大会给我这个机会上台，希望和大家下次有缘能再见！
 -->

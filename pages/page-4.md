@@ -1,5 +1,5 @@
-<h2 class="font-bold text-coolGray">
-  "Break the mirror"
+<h2 class="font-bold text-transparent text-stroke-1 text-6xl! text-stroke-coolGray/50">
+  Break the mirror
 </h2>
 
 <div

@@ -1,5 +1,5 @@
-<h2 class="font-bold text-coolGray">
-  “Feeling the water”
+<h2 class="font-bold text-transparent text-stroke-1 text-6xl! text-stroke-coolGray/50">
+  Feeling the water
 </h2>
 
 <div
@@ -177,7 +177,7 @@ Let's see the second solution, vue-nested-sfc.
 
 It's a quite complete solution, but the more I look into it, the more I'm convinced that the ideal solution should not be built on top of SFC.
 
-Aspproach of making toolchain support for this design certainly be invasive to existing official version.
+Approach of making toolchain support for this design certainly be invasive to existing official version.
 
 [click] 
 

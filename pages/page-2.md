@@ -23,7 +23,7 @@
   <span class="text-fuchsia-300 text-6">One File, Multiple Components?</span>
 </div>
 
-<ul class="flex flex-col w-640px lddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddh-2 text-coolgray-300/80">
+<ul class="flex flex-col w-640px lh-2 text-coolgray-300/80">
   <li v-click="4" class="transition-800">Component must be one file ?? <div class="text-6 inline-block ml-2 transform-translate-y-1.2" i-twemoji:face-with-rolling-eyes /></li>
   <li v-click="5" class="transition-800">Keep switching between files is annoying !! <div class="text-6 inline-block ml-2 transform-translate-y-1.2" i-twemoji:angry-face /></li>
 </ul>

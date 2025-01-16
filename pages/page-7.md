@@ -65,6 +65,8 @@ After finishing the first version of compiler, I was super excited!
 
 And that's my first time achieving something has really complicated design and requires a lot of work.
 
+[click]
+
 But I know, there'll be more ...
 
 I need to write a Vite plugin to support HMR, make a playground project as my demo ...
@@ -80,7 +82,7 @@ Actually I just create this project for personal learning and practice in the be
 
 But I found it has some potential value, and I have gained a lot of improvements in my skills while working on it.
 
-I started to treat it as my baby, and I'm so proud of it now.
+I started to treat it as my baby, and spend almost all my free time on it.
 
 [Page cost: 2.5 min]
 -->

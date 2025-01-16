@@ -1,4 +1,4 @@
-<h2 class="font-bold text-transparent text-stroke-1 text-6xl! text-stroke-coolGray/50">
+<h2 class="font-bold text-transparent text-stroke-1 text-5xl! text-stroke-coolGray/50">
   Sewing bones
 </h2>
 
@@ -11,9 +11,6 @@
 <div v-click="1" class="flex flex-col transition-800 w-auto lh-10 text-coolgray-300 text-4">
   <div>
     Vue template has a lot of <span class="text-orange-200:80 font-bold">optimization information</span>
-  </div>
-  <div>
-    JSX is too flexible, Vue can't generate <span class="text-emerald-500:80 font-bold">optimization information</span>.
   </div>
 </div>
 
@@ -37,24 +34,29 @@
 
 <!--
 
-I believe React users feel very comfortable with the component composition,
-since writing a function is enough to define a component.
+Next, let's talk about the syntax design.
+
+I believe React style is a more natural way to define components,
+because just writing a function is enough.
+
+I really like the DX that JSX provides, but why do I abandon it in Vue Vine?
 
 [click]
 
-React does this to fit the UI = f(state) concept, but it's actually simpler to write and look at.
+JSX is too dynamic, it's too hard to be analyzed by Vue compiler to generate optimize information.
 
 [click]
 
-I really like this development experience, but why don't I want JSX?
+I don't wanna lose the valuable performance benefits brought by Vue 3's optimization.
 
-First of all, I don't want to lose the valuable performance benefits brought by Vue 3's compilation optimization.
-
-Secondly, Vue 3 introduces a lot of powerful built-in features for template.
+and Vue has a lot of powerful built-in features for template.
 
 [click]
 
-After Vue 3 providing the "script setup" pattern, I'm sure that I found my ideal solution.
+After Vue 3 providing the "script setup" pattern, 
+
+I found that's very suitable to be put inside a function,
+and I know that's the time to start.
 
 [Page cost: 1.5 min]
 -->

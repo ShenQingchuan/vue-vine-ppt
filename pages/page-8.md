@@ -45,8 +45,6 @@ Effort came from one person is always limited, and that is why I love open sourc
 
 Thank you to all the members of the Vue Vine team and all the friends who contributed to the code!
 
-[click]
-
 I think we're getting more and more mature, and there're still many opportunities to improve it, which means we're looking forward to your contribution!
 
 [Page cost: 2.5 min]

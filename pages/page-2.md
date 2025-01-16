@@ -4,7 +4,7 @@
   <span class="text-emerald-300">of SFC</span>
 </h2>
 
-<div v-click="1" class="transition-800 w-640px lh-8! text-coolgray-200 text-2xl my-4">
+<div class="transition-800 w-640px lh-8! text-coolgray-200 text-2xl my-4">
   SFC, the iconic feature of Vue, <br>
   even learned by other frameworks like <span class="text-orange-600">Svelte</span> & <span class="text-violet-400">Astro</span>
 </div>
@@ -29,15 +29,17 @@
 </ul>
 
 <!--
-[click] 
-
 When I started learning Vue in 2018, Vue 2 was already a popular framework with a mature ecosystem and toolchain.
-Until now, we all felt natural to write Vue components in SFC.
+Until now, we all feel natural to write Vue components in SFC.
 
 [click] 
+[click] 
 
-But we do have a few different ways to write Vue components. Someone who has experience in building component libraries might vote for JSX because of its flexibility.
-Actually, Vue does have not-bad support for JSX, but due to its dynamic, it's too hard to be analyzed by Vue compiler to generate optimization information.
+But we do have a few different ways to write Vue components, right?
+
+Someone who has experience in building component libraries might vote for JSX because of its flexibility,
+
+and Vue also has not-bad support for JSX, 
 
 [click]
 
@@ -48,7 +50,9 @@ Maybe several reasons for this ...
 [click]
 
 First, is it necessary to use a single file to contain a component?
-Users who complain about this are probably annoyed by always need to create a new file, which is an easy operation but breaks our heart-flow.
+
+Users who complain about this are probably annoyed by always need to create a new file, which is not a difficult operation but breaks our heart-flow.
+
 Many developers may start from writing a long component and then splitting, which can be very annoying when using SFC.
 
 [click]

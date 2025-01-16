@@ -2,7 +2,6 @@
 import { defineShikiSetup } from '@slidev/types'
 import customLanguage from '../assets/vue-vine.tmLanguage.json'
 
-// @ts-expect-error
 export default defineShikiSetup(() => {
   return {
     themes: {
@@ -10,6 +9,7 @@ export default defineShikiSetup(() => {
       light: 'vitesse-light',
     },
     langs: [
+      'markdown',
       'js',
       'typescript',
       'vue-html',

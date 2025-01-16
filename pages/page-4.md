@@ -16,7 +16,7 @@
 
 <v-click :at="2">
 
-```mermaid { theme: 'neutral', themeVariables: { width: 'auto', fontFamily: 'Fira Code' }, scale: 0.8 }
+```mermaid { theme: 'neutral', themeVariables: { width: 'auto', fontFamily: 'Fira Code' }, scale: 0.6 }
 flowchart LR
   vue/compiler-core --> vue/compiler-dom --> vue/compiler-sfc
 ```
@@ -33,11 +33,11 @@ flowchart LR
 </div>
 
 <!--
-If you've ever used Vue Playground, you'll see what a SFC file is compiled into.
+If you have ever used Vue SFC Playground, you can see the output result after compilation.
 
 [click] 
 
-That is a Vue component object.
+Which is a bunch of code that related to one Vue component object.
 
 So, supporting for multiple components in one file is actually quite easy.
 

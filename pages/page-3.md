@@ -1,4 +1,4 @@
-<h2 class="font-bold text-transparent text-stroke-1 text-6xl! text-stroke-coolGray/50">
+<h2 class="font-bold text-transparent text-stroke-1 text-4xl! text-stroke-coolGray/50">
   Feeling the water
 </h2>
 
@@ -139,12 +139,12 @@ const [DefineBar, ReuseBar] = createReusableTemplate<{ items: string[] }>()
 </div>
 
 <!--
-Here're two solutions that are related to this problem.
+There're two solutions trying to solve this problem.
 
 [click] 
 [click] 
 
-The first one is “extract reusable templates”, starting from Vue Macros to VueUse.
+The first solution thought we need to “extract reusable templates”, provided by Vue Macros first and then merged into VueUse.
 
 [click] 
 
@@ -156,15 +156,12 @@ Let's start with the first one, here's a demo code showing how it works.
 You may found something complex and duplicated in your template
 
 [click] 
-and you want to reuse it
+then you wanna extract it out as a reusable fragment
 
 [click] 
-You can define a pair components, `DefineTemplate` and `ReuseTemplate`.
-and move the duplicated part into the `<DefineTemplate>`
+You can define a pair components to replace all duplicated parts
 
 [click] 
-Using `<ReuseTemplate>` for where you want to reuse it.
-
 [click] 
 
 You can also pass props to this reusable part, which is like passing props to a component.

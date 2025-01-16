@@ -21,6 +21,7 @@
 
 ````md magic-move
 ```vue-vine
+// App.vine.ts
 export function App() {
   const count = ref(1)
 
@@ -34,8 +35,34 @@ export function App() {
 
 </div>
 
+<div v-click="[1,5]" class="flex flex-col transition-800 w-auto lh-6 text-coolgray-300 text-4">
+  <div class="text-5 lh-10 mt-2">
+    <code>.vine.ts</code> is a valid TS file so that we can leverage TS's powerful toolchain system.
+  </div>
+  <div class="text-5 lh-10 mt-2">
+    Only some specific functions should be noticed.
+  </div>
+  <div v-click="2" class="mt6 flex items-stretch transition-800">
+    <img
+      class="h-200px object-contain" 
+      src="/assets/comp-and-module-global.png"
+      alt="comp-and-module-global"
+    >
+    <ul class="mt4 ml4 flex flex-col list-none">
+      <li class="mb4 transition-800" v-click="3">
+        <span class="font-bold text-amber-200/90 text-6">Yellow part:</span><br> 
+        All functions returning <code>vine`...`</code> will be compiled by Vite plugin.
+      </li>
+      <li class="mb4 transition-800" v-click="4">
+        <span class="font-bold text-emerald-200/90 text-6">Green part:</span><br> 
+        The rest will be remain as is.
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div
-  v-click="[1,2]"
+  v-click="5"
   class="flex flex-col transition-800 w-auto lh-6 text-coolgray-300 text-4"
 >
   <div class="text-cyan-200/90 mt-6">
@@ -58,32 +85,6 @@ export function App() {
   </div>
 </div>
 
-<div v-click="2" class="flex flex-col transition-800 w-auto lh-6 text-coolgray-300 text-4">
-  <div class="text-5 lh-10 mt-2">
-    <code>.vine.ts</code> is a valid TS file so that we can leverage TS's powerful toolchain system.
-  </div>
-  <div class="text-5 lh-10 mt-2">
-    Only some specific functions should be noticed.
-  </div>
-  <div v-click="3" class="mt6 flex items-stretch transition-800">
-    <img
-      class="h-200px object-contain" 
-      src="/assets/comp-and-module-global.png"
-      alt="comp-and-module-global"
-    >
-    <ul class="mt4 ml4 flex flex-col list-none">
-      <li class="mb4 transition-800" v-click="4">
-        <span class="font-bold text-amber-200/90 text-6">Yellow part:</span><br> 
-        All functions returning <code>vine`...`</code> will be compiled by Vite plugin.
-      </li>
-      <li class="mb4 transition-800" v-click="5">
-        <span class="font-bold text-emerald-200/90 text-6">Green part:</span><br> 
-        The rest will be remain as is.
-      </li>
-    </ul>
-  </div>
-</div>
-
 <!--
 
 So here's the solution that Vue vine provides.
@@ -94,13 +95,7 @@ In today's JS ecosystem, since we have bundler toolchains like Vite, we can easi
 
 This function is seen as a function in source code, but a Vue component object in runtime.
 
-As a user you don't need to care about the underlying implementation details.
-
-[click]
-
-Due to the limitation of time, we won't expand more details of Vine's usage today.
-
-If you're interested, please read our documentation to get more details.
+But as a user you don't need to care about these underlying implementation details.
 
 [click]
 
@@ -108,11 +103,18 @@ If you're interested, please read our documentation to get more details.
 
 and we're easy to integrate with existing toolchain and leverage superpower from VSCode.
 
+[click]
 a `.vine.ts` file could be treated as two parts:
-
 The yellow parts are functions that returning `vine` template strings.
 
+[click]
 The green part is the rest of the code, which're normal TS statements.
+
+[click]
+
+Due to the limitation of time, we won't expand more details of Vine's usage today.
+
+If you're interested, please read our documentation to get more details.
 
 [Page cost: 1.5 min]
 -->
